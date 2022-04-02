@@ -127,7 +127,7 @@ function Square(props){
       }
       return (
         <div className="game">
-          <div className="game-board">
+          <div className="game-board" >
             <Board 
               squares={current.squares}
               onClick={(i) => this.handleClick(i)}

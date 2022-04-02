@@ -1,7 +1,11 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    background-image: url("tictactoe.jpg");
+    background-size: 650px;
   }
+
+
+
   
   ol, ul {
     padding-left: 30px;
@@ -11,6 +15,7 @@ body {
     clear: both;
     content: "";
     display: table;
+    
   }
   
   .status {
@@ -18,34 +23,55 @@ body {
   }
   
   .square {
-    background: #fff;
-    border: 1px solid #999;
+    background: rgb(33, 240, 248); /*change 1*/
+    border: 2px solid rgb(5, 42, 11);
+    border-style:dashed;
     float: left;
+    
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
     height: 34px;
     margin-right: -1px;
     margin-top: -1px;
-    padding: 0;
+    padding: 10;
     text-align: center;
     width: 34px;
+
   }
   
   .square:focus {
     outline: none;
+    
+  
+  border: 3px solid rgb(138, 33, 199); /*change 2*/
+  
   }
   
   .kbd-navigation .square:focus {
-    background: #ddd;
+    background: rgb(153, 27, 191); /*change to purple*/
   }
-  
+
   .game {
     display: flex;
     flex-direction: row;
+    /*center and add border: change 3*/
+    margin: auto;
+  width: 50%;
+  border: 10px solid rgb(89, 214, 228);
+  border-style:ridge;
+  padding: 10px;
+
   }
-  
+  .game-board{
+    /*move board to the center: change 4*/
+    margin-left: 200px;
+   
+
+  }
   .game-info {
+    color: aliceblue;
     margin-left: 20px;
+   
   }
   
